@@ -146,8 +146,25 @@ test data
 Q4
 Explain the differences between Abstract Classes, Interfaces, and Traits.
 
-An abstract class is an organization of code like an ordinary class, except that it cannot be instantiated. An abstract class exists to abstract out functionality that is used in (presumably) more than one concrete class. The methods and such are included into the concrete class when the concrete class is defined and it "extends" the abstract class. The code within the abstract class is then available to the concrete class.
+An abstract class is an organization of code like an ordinary class, except
+that it cannot be instantiated. An abstract class exists to abstract out
+functionality that is used in (presumably) more than one concrete class. The
+methods and such are included into the concrete class when the concrete class
+is defined and it "extends" the abstract class. The code within the abstract
+class is then available to the concrete class.
 
-An Interface is similar in that it abstracts away functionality that will be useful to more than one class by showing a list of method names that the implementing class is obligated to respond to. When defining an interface the actual functionality of the methods will not be written, only the method names. A class "implements" an interface and is then obligated to create the methods on the class.
+An Interface is similar in that it abstracts away functionality that will be
+useful to more than one class by showing a list of method names that the
+implementing class is obligated to respond to. When defining an interface the
+actual functionality of the methods will not be written, only the method names.
+A class "implements" an interface and is then obligated to create the methods
+on the class.
 
-A trait is a chunk of code that can be incorporated into multiple classes with the keyword "use" followed by the trait name. A trait is kind of an intersection between abstract classes and Interfaces. It provides the methods than an interface requires, and it also provides their implementation as an abstract class does. The main difference with abstract classes is that PHP has single inheritance so that a class can only extend a single other class, but it can incorporate whatever traits it pleases ( with attention paid to overlap of method names ). 
+A trait is a chunk of code that can be incorporated into multiple classes with
+the keyword "use" followed by the trait name. A trait is kind of an
+intersection between abstract classes and Interfaces. It provides the methods
+than an interface requires, and it also provides their implementation as an
+abstract class does. The main difference with abstract classes is that PHP has
+single inheritance so that a class can only extend a single other class, but it
+can incorporate whatever traits it pleases ( with attention paid to overlap of
+method names ). 
